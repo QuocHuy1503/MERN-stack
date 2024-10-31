@@ -3,10 +3,11 @@ const express = require("express");
 const mongose = require("mongoose");
 const app = express();
 const workoutRoutes = require("./routes/workouts")
-
+const cors = require("cors");
 
 //Middleware
 app.use(express.json());
+app.use(cors());
 app.use(
     (request,response,next) => {
         console.log(request.path, request.method);

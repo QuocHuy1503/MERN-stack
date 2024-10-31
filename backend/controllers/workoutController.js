@@ -2,12 +2,9 @@ const { response } = require("express");
 const Workout = require("../models/workoutModel");
 
 const getworkouts = async (request, response ) => {
-    try{
-        const workouts = await Workout.find();
-        response.status(200).json(workouts);
-    }catch(error){
-        response.status(400).json({ error: error.message });
-    }
+    const workouts = await Workout.find().sort({ createdAt: -1 });
+    response.status(200).json(workouts);
+
 }
 
 const getworkout = async (request, response) => {
