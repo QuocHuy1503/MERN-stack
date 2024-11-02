@@ -1,6 +1,7 @@
 "use client"
 import { useEffect , useState } from "react";
-import WorkoutComponent from "../components/WorkoutComponent";
+import WorkoutDetails from "../components/WorkoutDetails";
+import WorkoutForm from "../components/WorkoutForm";
 const Home = () => {
     const [workouts, setWorkouts] = useState(null);
 
@@ -19,8 +20,11 @@ const Home = () => {
         <div className="home">
           <div className="workouts">
             {workouts && workouts.map((workout) => (
-              <WorkoutComponent key={workout._id} workout={workout} />
+              <WorkoutDetails key={workout._id} workout={workout} />
             ))}
+          </div>
+          <div className="form">
+            <WorkoutForm />
           </div>
         </div>
     );

@@ -33,3 +33,98 @@ header a{
   padding: 20px;
   margin: 0 auto;
 }
+
+.home{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+
+.workout-details{
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.workout-details h4{
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: #444;
+}
+
+.workout-details p{
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.workout-details span{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+form{
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+form h3{
+  margin: 0;
+  font-size: 1.2em;
+  color: #444;
+}
+
+form p{
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+
+input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; 
+}
+
+label, input{
+  display: block;
+}
+
+form button{
+  background: var(--primary-color);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+div.error{
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+} 
