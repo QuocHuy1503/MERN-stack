@@ -20,9 +20,6 @@ lib-cov/
 # Coverage directory used by tools like istanbul
 coverage/
 
-# dotenv environment variables file
-.env
-
 # Nodemon configuration files
 nodemon-debug.log
 .nodemonignore
